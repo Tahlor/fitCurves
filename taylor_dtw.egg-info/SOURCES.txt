@@ -1,0 +1,5 @@
+setup.py
+taylor_dtw.egg-info/PKG-INFO
+taylor_dtw.egg-info/SOURCES.txt
+taylor_dtw.egg-info/dependency_links.txt
+taylor_dtw.egg-info/top_level.txt

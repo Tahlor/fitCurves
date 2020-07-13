@@ -1,0 +1,5 @@
+setup.py
+fitCurves.egg-info/PKG-INFO
+fitCurves.egg-info/SOURCES.txt
+fitCurves.egg-info/dependency_links.txt
+fitCurves.egg-info/top_level.txt

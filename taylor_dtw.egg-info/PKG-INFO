@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: taylor-dtw
+Version: 0.1
+Summary: fit Bezier curves to points
+Home-page: https://github.com/tahlor/fitCurves
+Author: Taylor Archibald
+Author-email: tahlor@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2

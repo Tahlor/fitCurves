@@ -45,13 +45,12 @@ def extensions():
 
 
 setup(
-    name="taylor_dtw",
+    name="fitCurves",
     description='fit Bezier curves to points',
     version="0.1",
     long_description="",
     packages=find_packages(),
     setup_requires=["numpy"],
-    cmdclass={'build_ext': build_ext},
     author='Taylor Archibald',
     author_email="tahlor@gmail.com",
     url='https://github.com/tahlor/fitCurves',
