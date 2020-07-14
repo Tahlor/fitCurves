@@ -1,4 +1,10 @@
+MANIFEST.in
+README.md
 setup.py
+fitCurves/__init__.py
+fitCurves/bezier.py
+fitCurves/demo.py
+fitCurves/main.py
 fitCurves.egg-info/PKG-INFO
 fitCurves.egg-info/SOURCES.txt
 fitCurves.egg-info/dependency_links.txt

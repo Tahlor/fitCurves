@@ -5,7 +5,7 @@
 """
 from __future__ import print_function
 from numpy import *
-import bezier
+from fitCurves import bezier
 
 
 # Fit one (ore more) Bezier curves to a set of points
@@ -157,5 +157,29 @@ def computeMaxError(points, bez, parameters):
 
 
 def normalize(v):
-    return v / linalg.norm(v)
+    x = linalg.norm(v)
+    if x != 0:
+        return v / x
+    else:
+        return x
+def smooth(points, error, npoints=100):
+    """ points: 2D array, n*2, [points, [x,y]]
+    	error: max error for bez fitting
+        npoints: resolution / # of samples
+    """
+
+    cc = fitCurve(points, maxError=error)
+
+    try:
+        assert not isnan(sum(cc))
+    except:
+        import pandas as pd
+        df = pd.DataFrame(points)
+        df.to_clipboard(index=False, header=False)
+        input()
+
+    for c in cc:
+        x, y = bezier.bezier_curve(c, npoints)
+    points = array([x,y])
+    return points.transpose(1,0)
 
